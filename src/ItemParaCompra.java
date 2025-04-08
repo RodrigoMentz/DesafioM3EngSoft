@@ -4,7 +4,7 @@ public class ItemParaCompra {
 
     public ItemParaCompra(String nome) {
         this.nome = nome;
-        this.comprado = false; // padrão: não comprado
+        this.comprado = false;
     }
 
     public String getNome() {

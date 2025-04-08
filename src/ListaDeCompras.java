@@ -29,10 +29,6 @@ public class ListaDeCompras {
         atualizarData();
     }
 
-    public void atualizarData() {
-        this.dataAtualizacao = LocalDateTime.now();
-    }
-
     public void marcarItemComoComprado(String nome) {
         for (ItemParaCompra item : itens) {
             if (item.getNome().equalsIgnoreCase(nome)) {
@@ -41,5 +37,9 @@ public class ListaDeCompras {
                 break;
             }
         }
+    }
+
+    private void atualizarData() {
+        this.dataAtualizacao = LocalDateTime.now();
     }
 }
