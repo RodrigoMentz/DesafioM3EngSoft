@@ -36,6 +36,6 @@ public class ListaDeComprasTest {
         ItemParaCompra item = new ItemParaCompra("Ovo");
         lista.adicionarItem(item);
         assertEquals(1, lista.getItens().size());
-        assertEquals("Leite", lista.getItens().get(0).getNome());
+        assertEquals("Ovo", lista.getItens().get(0).getNome());
     }
 }
